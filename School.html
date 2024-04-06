@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spring Flowers School</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    nav a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .container {
+      margin: 20px;
+      padding: 20px;
+      background-color: #fff;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    tr:hover {
+      background-color: #f2f2f2;
+    }
+
+    /* Logo styling */
+    .logo {
+      float: left;
+      margin-top: 10px;
+      margin-left: 10px;
+      height: 45px;
+    }
+
+    /* Student photo styling */
+    .student-photo {
+      display: block;
+      margin: 0 auto;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+      float: left;
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="/Users/prudhvirajdivi/Downloads/schoollogo.jpeg" alt="Spring Flowers School Logo" class="logo">
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+    <a href="#">Student Profile</a>
+  </nav>
+</header>
+
+<div class="container">
+  <h2>Student Information</h2>
+  <button id="profileButton" onclick="showProfile()">Student Profile</button>
+
+  <div id="studentProfile" style="display: none;">
+    <table>
+      <tr>
+        <th><img src="/Users/prudhvirajdivi/Downloads/boy.jpeg" alt="Picture" class="student-photo"></th>
+      </tr>
+      <tr>
+        <td>
+          <p><strong>Name:</strong> Sai Gopi</p>
+          <p><strong>Age:</strong> 22</p>
+          <p><strong>Grade:</strong> 10</p>
+          <p><strong>Address:</strong> 123 Main St, City</p>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+</div>
+
+<script>
+  function showProfile() {
+    var profile = document.getElementById("studentProfile");
+    if (profile.style.display === "none") {
+      profile.style.display = "block";
+    } else {
+      profile.style.display = "none";
+    }
+  }
+</script>
+
+</body>
+</html>
